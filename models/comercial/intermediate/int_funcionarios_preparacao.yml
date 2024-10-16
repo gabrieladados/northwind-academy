@@ -1,0 +1,35 @@
+version: 2
+
+models:
+  - name: int_funcionarios_preparacao
+    description: Tabela de preparação dos dados brutos de funcionários.
+    columns:
+      - name: PK_FUNCIONARIO
+        description: blabla
+        tests:
+          - unique
+          - not_null
+
+      - name: FK_GERENTE
+        description: blabla
+
+      - name: NOME_FUNCIONARIO
+        description: blabla
+
+      - name: CARGO_FUNCIONARIO
+        description: blabla
+
+      - name: DT_NASCIMENTO_FUNCIONARIO
+        description: blabla
+
+      - name: DT_CONTRATACAO
+        description: blabla
+
+      - name: CIDADE_FUNCIONARIO
+        description: blabla
+
+      - name: REGIAO_FUNCIONARIO
+        description: blabla
+
+      - name: PAIS_FUNCIONARIO
+        description: blabla
