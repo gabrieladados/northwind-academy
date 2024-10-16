@@ -1,12 +1,7 @@
-
 # Name your project! Project names should contain only lowercase characters
 # and underscores. A good package name should reflect your organization's
 # name or the intended use of these models
-<<<<<<< HEAD
-name: 'my_new_project'
-=======
 name: 'dbt_northwind'
->>>>>>> a255573afd4a309c2007d63c3bc1d71ac04d2d21
 version: '1.0.0'
 config-version: 2
 
@@ -28,33 +23,15 @@ clean-targets:         # directories to be removed by `dbt clean`
   - "target"
   - "dbt_packages"
 
-
 # Configuring models
 # Full documentation: https://docs.getdbt.com/docs/configuring-models
 
-# In dbt, the default materialization for a model is a view. This means, when you run 
-# dbt run or dbt build, all of your models will be built as a view in your data platform. 
-# The configuration below will override this setting for models in the example folder to 
-# instead be materialized as tables. Any models you add to the root of the models folder will 
-# continue to be built as views. These settings can be overridden in the individual model files
-# using the `{{ config(...) }}` macro.
-
 models:
-<<<<<<< HEAD
-  my_new_project:
-    # Applies to all files under models/example/
-    example:
-      +materialized: table
-=======
   dbt_northwind:
     # Applies to all files under models/example/
     comercial:
       +materialized: table
       intermediate:
-     
       marts:
-
     staging:
       +materialized: view
-      
->>>>>>> a255573afd4a309c2007d63c3bc1d71ac04d2d21
